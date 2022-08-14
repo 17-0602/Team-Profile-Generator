@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "```md\r AS A manager\r I WANT to generate a webpage that displays my team's basic info\r SO THAT I have quick access to their emails and GitHub profiles\r ```",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17-0602/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/17-0602/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/17-0602/Team-Profile-Generator#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}

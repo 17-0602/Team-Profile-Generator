@@ -51,8 +51,8 @@ function addMember() {
             type: "list",
             message: "Would you like to add another new member?",
             choices: [
-                "Sure!",
-                "No, I've finished."
+                "Yes",
+                "No"
             ],
             name: "otherMember"
         }])
@@ -68,7 +68,7 @@ function addMember() {
             employees.push(newMember);
             addHtml(newMember)
             .then(function() {
-                if (otherMember === "yes") {
+                if (otherMember === "Yes") {
                     addMember();
                 } else {
                     finishHtml();
@@ -118,8 +118,8 @@ function addHtml(member) {
             <h5 class="card-header p-3 mb-2 bg-primary text-white">${name}<br /><br />Engineer</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
-                <li class="list-group-item">GitHub user: ${gitHub}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</li>
+                <li class="list-group-item">GitHub user: <a href="https://github.com/${gitHub}">${gitHub}</li>
             </ul>
             </div>
         </div>`;
@@ -129,7 +129,7 @@ function addHtml(member) {
             <h5 class="card-header p-3 mb-2 bg-primary text-white">${name}<br /><br />Intern</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</li>
                 <li class="list-group-item">School: ${school}</li>
             </ul>
         </div>`;
@@ -139,7 +139,7 @@ function addHtml(member) {
             <h5 class="card-header p-3 mb-2 bg-primary text-white">${name}<br /><br />Manager</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</li>
                 <li class="list-group-item">Office number: ${officePhone}</li>
             </ul>
         </div>`
