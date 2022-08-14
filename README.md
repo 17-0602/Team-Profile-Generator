@@ -31,6 +31,6 @@ THEN I exit the application, and the HTML is generated
 ```
 
 ## Deployed app
-By clicking on the following link, you can access a video showing the app's functionality: https://drive.google.com/file/d/1zg1rsNyDY1Wtk-ZCoKNZ07ZGqesZ9CnW/view?usp=sharing
+By clicking on the following link, you can access a video showing the app's functionality: https://drive.google.com/file/d/1yD6cMNvYwBkiIx25MmfB0zmUBFm3aWM4/view?usp=sharing
 
 By clicking on the following link, you can access the repo on GitHub: https://github.com/17-0602/Team-Profile-Generator
